@@ -28,9 +28,9 @@ class Conversations : Fragment() {
 
         val students = listOf(
             Title("Alunos"),
-            Student("Jéssica Milena", "Mobile Android"),
-            Student("Fábio Tadashi", "Mobile Android"),
-            Student("Guilherme Startori", "Mobile Android"),
+            Student("Jéssica Milena", "Mobile Android", true),
+            Student("Fábio Tadashi", "Mobile Android", true),
+            Student("Guilherme Startori", "Mobile Android", true),
             Student("Kauan Valverde", "Mobile Android"),
             Student("Maiara Gusmão", "Mobile Android"),
             Student("Martin Afonso", "Mobile Android"),

@@ -10,4 +10,5 @@
     <color name="pink_200">#f5004e</color>
     <color name="pink_400">#d10043</color>
     <color name="gray_200">#777777</color>
+    <color name="green_status">#228B22</color>
 </resources>

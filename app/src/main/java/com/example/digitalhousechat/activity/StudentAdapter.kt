@@ -1,8 +1,10 @@
 package com.example.digitalhousechat.activity
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import androidx.core.view.isInvisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousechat.databinding.StudentItemBinding
 import com.example.digitalhousechat.databinding.StudentTitleItemBinding
@@ -46,10 +48,13 @@ class StudentAdapter(
             student: Student,
             onClickListener: (student: Student) -> Unit
         ) {
+            if(student.read) binding.ivStatus.visibility = View.VISIBLE
             binding.tvName.text = student.name
             binding.tvCourse.text = student.course
             binding.mcStudentItem.setOnClickListener {
                 onClickListener(student)
+                binding.ivStatus.visibility = View.INVISIBLE
+                student.read = false
             }
         }
     }
